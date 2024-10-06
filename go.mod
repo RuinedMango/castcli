@@ -1,9 +1,13 @@
 module ruinedmango.com/castcli
 
-go 1.21.5
+go 1.23
+
+toolchain go1.23.2
 
 require (
+	github.com/PuerkitoBio/goquery v1.10.0 // indirect
 	github.com/SlyMarbo/rss v1.0.5 // indirect
+	github.com/andybalholm/cascadia v1.3.2 // indirect
 	github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394 // indirect
 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
 	github.com/charmbracelet/bubbles v0.20.0 // indirect
@@ -20,7 +24,11 @@ require (
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/tidwall/gjson v1.18.0 // indirect
+	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/pretty v1.2.1 // indirect
+	golang.org/x/net v0.29.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.24.0 // indirect
-	golang.org/x/text v0.3.8 // indirect
+	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/text v0.18.0 // indirect
 )
