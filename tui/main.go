@@ -1,9 +1,8 @@
-package tui
+package main
 
 import (
 	"fmt"
 	"log"
-
 	"github.com/gdamore/tcell/v2"
 )
 
@@ -60,6 +59,7 @@ func drawBox(s tcell.Screen, x1, y1, x2, y2 int, style tcell.Style, text string)
 }
 
 func main() {
+	fmt.Println(Search("SCP"))
 	defStyle := tcell.StyleDefault.Background(tcell.ColorReset).Foreground(tcell.ColorReset)
 	boxStyle := tcell.StyleDefault.Foreground(tcell.ColorWhite).Background(tcell.ColorPurple)
 
