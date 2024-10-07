@@ -1,4 +1,4 @@
-package main
+package daemon
 
 import (
 	"crypto/sha1"
@@ -33,7 +33,6 @@ func Search(query string) ([]string){
 	request.Header.Add("X-Auth-Date", apiTime)
 	request.Header.Add("X-Auth-Key", apiKey)
 	request.Header.Add("Authorization", hashString)
-	print(apiTime)
 
 	resp, err := http.DefaultClient.Do(request)
 	if err != nil {
