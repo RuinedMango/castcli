@@ -9,7 +9,7 @@ import(
 
 func main() {
     // Create a Unix domain socket and listen for incoming connections.
-    socket, err := net.Listen("unix", "%TEMP%/echo.sock")
+    socket, err := net.Listen("unix", "/tmp/echo.sock")
     if err != nil {
         log.Fatal(err)
     }
